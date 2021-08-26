@@ -53,23 +53,31 @@ body{
 
         @media screen and (min-width: 340px) and (max-width: 540px){
             background-size: cover;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "autor"
+                "escritor";
 
-            height: 13pc;
+            height: 9pc;
+            
             h1{
+                grid-area: autor;
                 font-family: 'Abril Fatface', cursive;
-                font-size: 3pc;
+                font-size: 2pc;
                 color: lightgray;
                 float: left;
-                margin: 1pc;
+                margin: 0pc 4pc 0pc 1pc;
             }
 
             h2{
+                grid-area: escritor;
                 font-family: 'Abril Fatface', cursive;
                 font-family: 'MonteCarlo', cursive;
-                font-size: 6pc;
+                font-size: 3pc;
                 color: lightgray;
                 float: right;
-                margin: 0pc 2pc 5pc 0pc;
+                margin: 0pc 1pc 7pc 11pc;
             }
         }
     }

@@ -27,6 +27,37 @@
   align-items: center;
   justify-items: center;
 }
+@media screen and (min-width: 340px) and (max-width: 540px) {
+  #Novedades h3 {
+    grid-area: h3;
+    font-family: "Cormorant Garamond", serif;
+    font-family: "Encode Sans SC", sans-serif;
+    font-family: "Uchen", serif;
+    font-size: 2pc;
+  }
+  #Novedades h4 {
+    font-size: 1pc;
+    justify-items: center;
+    text-align: center;
+  }
+  #Novedades img {
+    grid-area: img;
+    margin: 1pc 0pc;
+  }
+  #Novedades p {
+    grid-area: p;
+    font-size: 1.1pc;
+    text-align: justify;
+    padding-right: 1pc;
+  }
+  #Novedades .gridNovedades {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "h3 h3" "img h4" "img p";
+    align-items: center;
+    justify-items: center;
+  }
+}
 
 .enlacesVenta {
   margin: 0.5pc;
@@ -184,22 +215,27 @@ body .sPortada h2 {
 @media screen and (min-width: 340px) and (max-width: 540px) {
   body .sPortada {
     background-size: cover;
-    height: 13pc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "autor" "escritor";
+    height: 9pc;
   }
   body .sPortada h1 {
+    grid-area: autor;
     font-family: "Abril Fatface", cursive;
-    font-size: 3pc;
+    font-size: 2pc;
     color: lightgray;
     float: left;
-    margin: 1pc;
+    margin: 0pc 4pc 0pc 1pc;
   }
   body .sPortada h2 {
+    grid-area: escritor;
     font-family: "Abril Fatface", cursive;
     font-family: "MonteCarlo", cursive;
-    font-size: 6pc;
+    font-size: 3pc;
     color: lightgray;
     float: right;
-    margin: 0pc 2pc 5pc 0pc;
+    margin: 0pc 1pc 7pc 11pc;
   }
 }
 body .Titulo {

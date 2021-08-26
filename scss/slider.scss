@@ -1,0 +1,46 @@
+.carousel-item{
+    .d2-flex {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        width: 75%;
+        text-align: justify;
+        
+        h5, h6{
+            text-align: $align;
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 1359px){
+            display: block;
+            position: relative;
+            width: 100%;
+            text-align: justify;
+            left: -7%;
+        }
+    }    
+
+    .text-light2{
+        padding-right: 15%;
+        text-align: justify;
+        color: white;
+
+        @media screen and (min-width: 320px) and (max-width: 1359px){
+            display: block;
+            width: 100%;
+            text-align: justify;
+            color: white;
+        }
+    }
+
+    .d-flex {
+        float: left;
+        margin-left: 10%;
+
+        @media screen and (min-width: 320px) and (max-width: 1359px){
+            display: block;
+            position: relative;
+            width: 100%;
+            left: -35%;
+        }
+    }
+}

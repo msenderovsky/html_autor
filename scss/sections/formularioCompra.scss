@@ -1,0 +1,33 @@
+.formularioCompra{
+    display: grid;
+    grid-template-areas: 
+    "formulario"
+    "subTituloCompra"
+    "mapa";
+    grid-template-rows: 5pc 5pc 5pc;
+    grid-template-columns: 100pc;
+    margin: 1pc 3pc;
+    align-content: space-around;
+    justify-content: space-around;
+    justify-items: $align;
+    align-items: $align;
+    text-align: $align;
+
+    h3{
+        text-align: $align;
+        padding-bottom: 0.25pc;
+        border-bottom: 0.2pc solid rgb(251, 255, 34);
+    }
+
+    #formulario{
+        grid-area: formulario;
+    }
+
+    #subTituloCompra{
+        grid-area: subTituloCompra;
+    }
+
+    #mapa{
+        grid-area: mapa;
+    }
+}

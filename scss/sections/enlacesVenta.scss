@@ -1,0 +1,34 @@
+.enlacesVenta{
+        margin: 0.5pc;
+        height: 7pc;
+        width: 80pc;
+        display: flex;
+        justify-content: space-around;
+        align-items: $align;
+
+        .compraAmazon, .compraBD,
+        .compraML, .compraOtros{
+            height: 2pc;
+            justify-content: $align;
+            align-content: $align;
+            transition: all 1s ease-in-out;
+
+            &:hover{
+                background-color: lightgray;
+                text-decoration: none;
+                transform: scale(3);
+            }
+
+            a{
+                font-family: 'MedievalSharp', cursive;
+                font-family: 'Roboto Mono', monospace;
+                color: white;
+                text-decoration: none;
+
+                &:hover{
+                    color: black;
+                    transform: scale(3);
+                }
+            }
+        }
+    }

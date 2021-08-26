@@ -1,0 +1,116 @@
+$align: center;
+
+@import 'sections/Novedades';
+@import 'sections/enlacesVenta';
+@import 'sections/formularioCompra';
+@import 'slider';
+@import 'mixins';
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-image: radial-gradient(rgb(134, 79, 75), rgb(65, 25, 22));
+
+    header{
+        display: initial;
+        text-align: $align;
+    }
+
+    .navbar{
+        color: rgb(134, 79, 75);
+
+        @media screen and (min-width: 340px) and (max-width: 540px){
+            height: 2pc;
+        }
+    }
+    #navbarNavDropdown ul{
+        justify-content: $align;
+    }
+
+    .sPortada{
+        background-image: url("../images/background3.jpg");
+        height: 18pc;
+
+        h1{
+            font-family: 'Abril Fatface', cursive;
+            font-size: 4pc;
+            color: lightgray;
+            float: left;
+            margin: 1pc;
+        }
+
+        h2{
+            font-family: 'Abril Fatface', cursive;
+            font-family: 'MonteCarlo', cursive;
+            font-size: 6pc;
+            color: lightgray;
+            float: right;
+            margin: 7pc 2pc 0pc 0pc;
+        }
+
+        @media screen and (min-width: 340px) and (max-width: 540px){
+            background-size: cover;
+
+            height: 13pc;
+            h1{
+                font-family: 'Abril Fatface', cursive;
+                font-size: 3pc;
+                color: lightgray;
+                float: left;
+                margin: 1pc;
+            }
+
+            h2{
+                font-family: 'Abril Fatface', cursive;
+                font-family: 'MonteCarlo', cursive;
+                font-size: 6pc;
+                color: lightgray;
+                float: right;
+                margin: 0pc 2pc 5pc 0pc;
+            }
+        }
+    }
+
+    .Titulo{
+        font-family: 'Encode Sans SC', sans-serif;
+        font-family: 'Uchen', serif;
+        text-align: $align;
+        background-color: black;
+    }
+
+    .gridBio{
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-template-areas: 
+            "tbi tbp";
+        align-items: $align;
+
+        p{
+            grid-area: tbp;
+            font-family: 'MedievalSharp', cursive;
+            font-family: 'Roboto Mono', monospace;
+            margin-left: 0.5pc;
+            margin-right: 0.5pc;
+            text-align: justify;
+        }
+
+        img{
+            grid-area: tbi;
+            margin-top: 0.5pc;
+            margin-left: 0.5pc;
+            margin-bottom: 0.5pc;
+        }
+    }
+
+    #Contacto{
+        text-align: $align;
+    }
+
+    footer{
+        background-color:grey;
+        text-align: $align;
+    }
+}

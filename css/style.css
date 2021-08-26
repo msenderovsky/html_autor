@@ -1,0 +1,239 @@
+#Novedades h3 {
+  grid-area: h3;
+  font-family: "Cormorant Garamond", serif;
+  font-family: "Encode Sans SC", sans-serif;
+  font-family: "Uchen", serif;
+  font-size: 4pc;
+}
+#Novedades h4 {
+  font-size: 2pc;
+  justify-items: center;
+  text-align: center;
+}
+#Novedades img {
+  grid-area: img;
+  margin: 1pc 0pc;
+}
+#Novedades p {
+  grid-area: p;
+  font-size: 1.1pc;
+  text-align: justify;
+  padding-right: 1pc;
+}
+#Novedades .gridNovedades {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas: "img h3" "img h4" "img p";
+  align-items: center;
+  justify-items: center;
+}
+
+.enlacesVenta {
+  margin: 0.5pc;
+  height: 7pc;
+  width: 80pc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.enlacesVenta .compraAmazon, .enlacesVenta .compraBD,
+.enlacesVenta .compraML, .enlacesVenta .compraOtros {
+  height: 2pc;
+  justify-content: center;
+  align-content: center;
+  transition: all 1s ease-in-out;
+}
+.enlacesVenta .compraAmazon:hover, .enlacesVenta .compraBD:hover,
+.enlacesVenta .compraML:hover, .enlacesVenta .compraOtros:hover {
+  background-color: lightgray;
+  text-decoration: none;
+  transform: scale(3);
+}
+.enlacesVenta .compraAmazon a, .enlacesVenta .compraBD a,
+.enlacesVenta .compraML a, .enlacesVenta .compraOtros a {
+  font-family: "MedievalSharp", cursive;
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  text-decoration: none;
+}
+.enlacesVenta .compraAmazon a:hover, .enlacesVenta .compraBD a:hover,
+.enlacesVenta .compraML a:hover, .enlacesVenta .compraOtros a:hover {
+  color: black;
+  transform: scale(3);
+}
+
+.formularioCompra {
+  display: grid;
+  grid-template-areas: "formulario" "subTituloCompra" "mapa";
+  grid-template-rows: 5pc 5pc 5pc;
+  grid-template-columns: 100pc;
+  margin: 1pc 3pc;
+  align-content: space-around;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+.formularioCompra h3 {
+  text-align: center;
+  padding-bottom: 0.25pc;
+  border-bottom: 0.2pc solid #fbff22;
+}
+.formularioCompra #formulario {
+  grid-area: formulario;
+}
+.formularioCompra #subTituloCompra {
+  grid-area: subTituloCompra;
+}
+.formularioCompra #mapa {
+  grid-area: mapa;
+}
+
+.carousel-item .d2-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  width: 75%;
+  text-align: justify;
+}
+.carousel-item .d2-flex h5, .carousel-item .d2-flex h6 {
+  text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 1359px) {
+  .carousel-item .d2-flex {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: justify;
+    left: -7%;
+  }
+}
+.carousel-item .text-light2 {
+  padding-right: 15%;
+  text-align: justify;
+  color: white;
+}
+@media screen and (min-width: 320px) and (max-width: 1359px) {
+  .carousel-item .text-light2 {
+    display: block;
+    width: 100%;
+    text-align: justify;
+    color: white;
+  }
+}
+.carousel-item .d-flex {
+  float: left;
+  margin-left: 10%;
+}
+@media screen and (min-width: 320px) and (max-width: 1359px) {
+  .carousel-item .d-flex {
+    display: block;
+    position: relative;
+    width: 100%;
+    left: -35%;
+  }
+}
+
+.text-light2, .enlacesVenta .compraAmazon a, .enlacesVenta .compraBD a, #Contacto form label,
+.enlacesVenta .compraML a, .enlacesVenta .compraOtros a, body, .gridBio p, .Titulo {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: radial-gradient(#864f4b, #411916);
+}
+body header {
+  display: initial;
+  text-align: center;
+}
+body .navbar {
+  color: #864f4b;
+}
+@media screen and (min-width: 340px) and (max-width: 540px) {
+  body .navbar {
+    height: 2pc;
+  }
+}
+body #navbarNavDropdown ul {
+  justify-content: center;
+}
+body .sPortada {
+  background-image: url("../images/background3.jpg");
+  height: 18pc;
+}
+body .sPortada h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 4pc;
+  color: lightgray;
+  float: left;
+  margin: 1pc;
+}
+body .sPortada h2 {
+  font-family: "Abril Fatface", cursive;
+  font-family: "MonteCarlo", cursive;
+  font-size: 6pc;
+  color: lightgray;
+  float: right;
+  margin: 7pc 2pc 0pc 0pc;
+}
+@media screen and (min-width: 340px) and (max-width: 540px) {
+  body .sPortada {
+    background-size: cover;
+    height: 13pc;
+  }
+  body .sPortada h1 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 3pc;
+    color: lightgray;
+    float: left;
+    margin: 1pc;
+  }
+  body .sPortada h2 {
+    font-family: "Abril Fatface", cursive;
+    font-family: "MonteCarlo", cursive;
+    font-size: 6pc;
+    color: lightgray;
+    float: right;
+    margin: 0pc 2pc 5pc 0pc;
+  }
+}
+body .Titulo {
+  font-family: "Encode Sans SC", sans-serif;
+  font-family: "Uchen", serif;
+  text-align: center;
+  background-color: black;
+}
+body .gridBio {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-areas: "tbi tbp";
+  align-items: center;
+}
+body .gridBio p {
+  grid-area: tbp;
+  font-family: "MedievalSharp", cursive;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 0.5pc;
+  margin-right: 0.5pc;
+  text-align: justify;
+}
+body .gridBio img {
+  grid-area: tbi;
+  margin-top: 0.5pc;
+  margin-left: 0.5pc;
+  margin-bottom: 0.5pc;
+}
+body #Contacto {
+  text-align: center;
+}
+body footer {
+  background-color: grey;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

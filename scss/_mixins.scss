@@ -1,0 +1,8 @@
+@mixin colorLetra($color){
+    color:$color;
+}
+
+.text-light2, .enlacesVenta .compraAmazon a, .enlacesVenta .compraBD a, #Contacto form label,
+.enlacesVenta .compraML a, .enlacesVenta .compraOtros a, body, .gridBio p,.Titulo{
+    @include colorLetra(white);
+}

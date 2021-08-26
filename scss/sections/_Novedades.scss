@@ -1,0 +1,40 @@
+#Novedades{
+
+    h3{
+        grid-area: h3;
+        font-family: 'Cormorant Garamond', serif;
+        font-family: 'Encode Sans SC', sans-serif;
+        font-family: 'Uchen', serif;
+        font-size: 4pc;
+    }
+
+    h4{
+        font-size: 2pc;
+        justify-items: $align;
+        text-align: $align;
+    }
+
+    img{
+        grid-area: img;
+        margin: 1pc 0pc;
+    }
+    
+    p{
+        grid-area: p;
+        font-size: 1.1pc;
+        text-align: justify;
+        padding-right: 1pc;
+    }
+
+    .gridNovedades{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: 
+            "img h3"
+            "img h4"
+            "img p";
+        align-items: $align;
+        justify-items: $align;
+    }
+    
+}

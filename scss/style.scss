@@ -12,7 +12,6 @@ $align: center;
 }
 
 body{
-    background-image: radial-gradient(rgb(134, 79, 75), rgb(65, 25, 22));
 
     header{
         display: initial;
@@ -24,6 +23,16 @@ body{
 
         @media screen and (min-width: 340px) and (max-width: 540px){
             height: 2pc;
+            .container-fluid{
+                height: 1pc;
+            }
+        }
+
+        @media screen and (min-width: 541px) and (max-width: 768px){
+            height: 2.5pc;
+            .container-fluid{
+                height: 5pc;
+            }
         }
     }
     #navbarNavDropdown ul{
@@ -32,52 +41,98 @@ body{
 
     .sPortada{
         background-image: url("../images/background3.jpg");
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "autor"
+            "escritor";
+
         height: 18pc;
 
         h1{
+            grid-area: autor;
             font-family: 'Abril Fatface', cursive;
-            font-size: 4pc;
             color: lightgray;
             float: left;
+            font-size: 4pc;
             margin: 1pc;
         }
 
         h2{
+            grid-area: escritor;
             font-family: 'Abril Fatface', cursive;
             font-family: 'MonteCarlo', cursive;
-            font-size: 6pc;
             color: lightgray;
             float: right;
-            margin: 7pc 2pc 0pc 0pc;
+            font-size: 8pc;
+            margin: 0pc 0pc 5pc 63pc;
         }
 
-        @media screen and (min-width: 340px) and (max-width: 540px){
-            background-size: cover;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas: 
-                "autor"
-                "escritor";
+        @media screen and (min-width: 1025px) and (max-width: 1360px){
+            h1{
+                margin: 1pc;
+            }
 
+            h2{
+                margin: 7pc 2pc 0pc 0pc;
+            }
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px){
+            height: 10pc;
+            background-size: cover;
+
+            h1{
+                margin: 1pc;
+                font-size: 2pc;
+            }
+
+            h2{
+                margin: 1pc 2pc 0pc 55pc;
+                font-size: 3pc;
+            }
+        }
+
+        @media screen and (min-width: 541px) and (max-width: 768px){
+            height: 8pc;            
+
+            h1{
+                font-size: 1.5pc;
+                padding-left: 1pc;
+            }
+
+            h2{
+                font-size: 2pc;
+                margin: 1pc 1pc 2pc 42pc;
+            }
+        }
+
+        @media screen and (min-width: 415px) and (max-width: 540px){    
             height: 9pc;
             
             h1{
-                grid-area: autor;
-                font-family: 'Abril Fatface', cursive;
                 font-size: 2pc;
-                color: lightgray;
-                float: left;
                 margin: 0pc 4pc 0pc 1pc;
             }
 
             h2{
-                grid-area: escritor;
-                font-family: 'Abril Fatface', cursive;
-                font-family: 'MonteCarlo', cursive;
                 font-size: 3pc;
-                color: lightgray;
-                float: right;
-                margin: 0pc 1pc 7pc 11pc;
+                margin: 3pc 1pc 7pc 25pc;
+            }
+        }
+
+        @media screen and (min-width: 411px) and (max-width: 414px){    
+            height: 9pc;
+            
+            h1{
+                font-size: 2pc;
+                margin: 0pc 4pc 0pc 1pc;
+            }
+
+            h2{
+                font-size: 3pc;
+                margin: 3pc 1pc 7pc 17pc;
             }
         }
     }
@@ -86,10 +141,20 @@ body{
         font-family: 'Encode Sans SC', sans-serif;
         font-family: 'Uchen', serif;
         text-align: $align;
-        background-color: black;
+        color: black;
+    }
+
+    #Obras .Titulo{
+        background-color:#B2C9AB ;
+    }
+
+    #Biografia .Titulo{
+        background-color:#92B6B1 ;
     }
 
     .gridBio{
+        
+        background-color: #92B6B1;
         display: grid;
         grid-template-columns: 1fr 6fr;
         grid-template-areas: 
@@ -100,8 +165,8 @@ body{
             grid-area: tbp;
             font-family: 'MedievalSharp', cursive;
             font-family: 'Roboto Mono', monospace;
-            margin-left: 0.5pc;
-            margin-right: 0.5pc;
+            margin-left: 1pc;
+            margin-right: 1pc;
             text-align: justify;
         }
 
@@ -110,10 +175,50 @@ body{
             margin-top: 0.5pc;
             margin-left: 0.5pc;
             margin-bottom: 0.5pc;
+
+
+            @media screen and (min-width: 769px) and (max-width: 1024px){
+                height: auto;
+                width: 80%;
+            }
+            @media screen and (min-width: 540px) and (max-width: 767px){
+                height: auto;
+                width: 20%;
+            }
+
+            @media screen and (min-width: 411px) and (max-width: 414px){
+                height: auto;
+                width: 20%;
+            }
+        }
+        
+        @media screen and (min-width: 540px) and (max-width: 767px){
+            display: flex;
+            p{
+                text-align:start;
+                font-size: 0.75pc;
+            }
+        }
+
+        @media screen and (min-width: 411px) and (max-width: 414px){
+            display: flex;
+            p{
+                text-align:start;
+                font-size: 0.75pc;
+            }
         }
     }
 
+    #Compra .Titulo{
+        background-color: #788AA3;
+    }
+
     #Contacto{
+        .Titulo{
+            background-color: #666A86;
+        }
+
+        background-color: #666A86;
         text-align: $align;
     }
 

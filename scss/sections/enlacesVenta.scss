@@ -1,13 +1,14 @@
 .enlacesVenta{
-        margin: 0.5pc;
+
+    background-color: #788AA3;
         height: 7pc;
-        width: 80pc;
+        width: 100%;
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         align-items: $align;
 
-        .compraAmazon, .compraBD,
-        .compraML, .compraOtros{
+        .Enlace{
             height: 2pc;
             justify-content: $align;
             align-content: $align;
@@ -31,4 +32,37 @@
                 }
             }
         }
-    }
+
+        @media screen and (min-width: 340px) and (max-width: 540px){
+            height: 7pc;
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: $align;
+
+            .Enlace{
+                height: 2pc;
+                justify-content: $align;
+                align-content: $align;
+            }
+
+        }    
+
+        @media screen and (min-width: 541px) and (max-width: 768px){
+            margin: 2pc;
+            height: 3pc;
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: $align;
+
+            .Enlace{
+                height: 2pc;
+                justify-content: $align;
+                align-content: $align;
+            }
+
+        }
+}

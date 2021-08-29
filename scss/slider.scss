@@ -1,46 +1,169 @@
 .carousel-item{
+    
+    background-color: #B2C9AB;
     .d2-flex {
         display: flex;
         flex-direction: column;
-        padding: 5%;
+        padding: 2%;
         width: 75%;
         text-align: justify;
         
-        h5, h6{
+        h5{
+            font-size: 1.5pc;
+            text-align: $align;
+        }
+        
+        h6{
+            font-size: 1pc;
             text-align: $align;
         }
 
-        @media screen and (min-width: 320px) and (max-width: 1359px){
+        p{
+            font-size: 0.8pc;
+        }
+
+        @media screen and (min-width: 1025px) and (max-width: 1359px){
             display: block;
             position: relative;
             width: 100%;
-            text-align: justify;
             left: -7%;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px){
+            display: block;
+            position: relative;
+            width: 100%;
+            left: -5%;
+            padding-right: 3pc;
+        }
+        
+        @media screen and (min-width: 541px) and (max-width: 768px){
+            display: block;
+            position: relative;
+            width: 100%;
+            left: -10%;
+            padding-top: 3%;
+
+            h5{
+                font-size: 1.25pc;
+            }
+        }
+
+        @media screen and (min-width: 415px) and (max-width: 540px){
+            display: block;
+            position: relative;
+            width: 100%;
+            left: -10%;
+        }
+
+        @media screen and (min-width: 411px) and (max-width: 414px){
+            display: block;
+            position: relative;
+            width: 100%;
+            left: -10%;
+
+            h5{
+                font-size: 100%;
+            }
+
+            h6{
+                font-size: 80%;
+            }
+            p{ 
+                font-size: 0.7pc;
+            }
         }
     }    
 
     .text-light2{
-        padding-right: 15%;
-        text-align: justify;
-        color: white;
 
-        @media screen and (min-width: 320px) and (max-width: 1359px){
+        @media screen and (min-width: 1360px) {
+            padding-right: 15%;
+            text-align: justify;
+            color: black;
+        }
+
+        @media screen and (min-width: 541px) and (max-width: 1359px){
             display: block;
             width: 100%;
             text-align: justify;
-            color: white;
+            color: black;
+        }
+
+        @media screen and (min-width: 415px) and (max-width: 540px){
+            width: 100%;
+            color: black;
+            text-align: justify;
+            font-size: 0.9pc;
+            padding-right: 3pc;
+            padding-left: -2pc;
+        }
+        
+        @media screen and (min-width: 411px) and (max-width: 414px){  
+            width: 100%;
+            color: black;
+            text-align: justify;
+            padding-right: 1pc;
         }
     }
 
     .d-flex {
         float: left;
         margin-left: 10%;
+        padding: 2% 0%;
 
-        @media screen and (min-width: 320px) and (max-width: 1359px){
+        @media screen and (min-width: 541px) and (max-width: 768px){
             display: block;
             position: relative;
-            width: 100%;
-            left: -35%;
+            width: 40%;
+            height: auto;
+            left: -5%;
+        }
+
+        @media screen and (min-width: 340px) and (max-width: 540px){
+            display: block;
+            position: relative;
+            width: 30%;
+            height: auto;
+            left: -5%;
+        }
+
+        img{
+            @media screen and (min-width: 769px) and (max-width: 1024px){
+                display: block;
+                position: relative;
+                width: 40%;
+                height: auto;
+                left: 15%;
+                margin-top: 1pc;
+            }
+
+            @media screen and (min-width: 541px) and (max-width: 768px){
+                display: block;
+                position: relative;
+                width: 40%;
+                height: auto;
+                left: 15%;
+                margin-top: 1pc;
+            }
+
+            @media screen and (min-width: 415px) and (max-width: 540px){
+                display: block;
+                position: relative;
+                width: 40%;
+                height: auto;
+                left: 20%;
+                margin-top: 4pc;
+            }
+
+            @media screen and (min-width: 411px) and (max-width: 414px){
+                display: block;
+                position: relative;
+                width: 40%;
+                height: auto;
+                left: 25%;
+                margin-top: 3.5pc;
+            }
         }
     }
 }

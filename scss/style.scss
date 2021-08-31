@@ -34,6 +34,13 @@ body{
                 height: 5pc;
             }
         }
+        
+        @media screen and (min-width: 320px) and (max-width: 359px){    
+            height: 2.5pc;
+            .container-fluid{
+                height: 5pc;
+            }
+        }
     }
     #navbarNavDropdown ul{
         justify-content: $align;
@@ -135,6 +142,34 @@ body{
                 margin: 3pc 1pc 7pc 17pc;
             }
         }
+
+        @media screen and (min-width: 360px) and (max-width: 375px){    
+            height: 9pc;
+            
+            h1{
+                font-size: 1.5pc;
+                margin: 0pc 4pc 0pc 1pc;
+            }
+
+            h2{
+                font-size: 3pc;
+                margin: 4pc 1pc 7pc 14pc;
+            }
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 359px){    
+            height: 9pc;
+            
+            h1{
+                font-size: 1.5pc;
+                margin: 0pc 4pc 0pc 1pc;
+            }
+
+            h2{
+                font-size: 3pc;
+                margin: 4pc 1pc 7pc 12pc;
+            }
+        }
     }
 
     .Titulo{
@@ -190,6 +225,16 @@ body{
                 height: auto;
                 width: 20%;
             }
+            
+            @media screen and (min-width: 360px) and (max-width: 375px){
+                height: auto;
+                width: 30%;
+            }
+
+            @media screen and (min-width: 320px) and (max-width: 359px){   
+                height: auto;
+                width: 30%;
+            }
         }
         
         @media screen and (min-width: 540px) and (max-width: 767px){
@@ -207,6 +252,22 @@ body{
                 font-size: 0.75pc;
             }
         }
+        
+        @media screen and (min-width: 360px) and (max-width: 375px){
+            display: flex;
+            p{
+                text-align:start;
+                font-size: 0.75pc;
+            }
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 359px){   
+            display: flex;
+            p{
+                text-align:start;
+                font-size: 0.75pc;
+            }
+        } 
     }
 
     #Compra .Titulo{

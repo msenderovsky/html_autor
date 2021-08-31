@@ -121,6 +121,74 @@
     justify-items: center;
   }
 }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  #Novedades h3 {
+    grid-area: h3;
+    font-size: 0.1pc;
+    width: 100%;
+    text-align: center;
+  }
+  #Novedades h4 {
+    font-size: 1pc;
+    justify-items: center;
+    text-align: center;
+  }
+  #Novedades img {
+    grid-area: img;
+    width: 70%;
+    height: auto;
+    margin-left: 2pc;
+  }
+  #Novedades p {
+    grid-area: p;
+    font-size: 0.8pc;
+    text-align: justify;
+    padding-right: 1pc;
+    padding-left: 1pc;
+    width: 90%;
+  }
+  #Novedades .gridNovedades {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "h3 h3" "h4 h4" "img p";
+    align-items: center;
+    justify-items: center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  #Novedades h3 {
+    grid-area: h3;
+    font-size: 1.5pc;
+    width: 100%;
+    text-align: center;
+  }
+  #Novedades h4 {
+    font-size: 1pc;
+    justify-items: center;
+    text-align: center;
+  }
+  #Novedades img {
+    grid-area: img;
+    width: 70%;
+    height: auto;
+    margin-left: 2pc;
+  }
+  #Novedades p {
+    grid-area: p;
+    font-size: 0.8pc;
+    text-align: justify;
+    padding-right: 1pc;
+    padding-left: 1pc;
+    width: 90%;
+  }
+  #Novedades .gridNovedades {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "h3 h3" "h4 h4" "img p";
+    align-items: center;
+    justify-items: center;
+  }
+}
 
 .enlacesVenta {
   background-color: #788AA3;
@@ -171,6 +239,21 @@
   .enlacesVenta {
     margin: 2pc;
     height: 3pc;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .enlacesVenta .Enlace {
+    height: 2pc;
+    justify-content: center;
+    align-content: center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  .enlacesVenta {
+    height: 8pc;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -286,6 +369,42 @@
     font-size: 0.7pc;
   }
 }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  .carousel-item .d2-flex {
+    display: block;
+    position: relative;
+    width: 100%;
+    left: -10%;
+    padding: 0%;
+  }
+  .carousel-item .d2-flex h5 {
+    font-size: 100%;
+  }
+  .carousel-item .d2-flex h6 {
+    font-size: 80%;
+  }
+  .carousel-item .d2-flex p {
+    font-size: 0.7pc;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  .carousel-item .d2-flex {
+    display: block;
+    position: relative;
+    width: 120%;
+    left: -30%;
+    padding-left: 0.5pc;
+  }
+  .carousel-item .d2-flex h5 {
+    font-size: 100%;
+  }
+  .carousel-item .d2-flex h6 {
+    font-size: 80%;
+  }
+  .carousel-item .d2-flex p {
+    font-size: 0.7pc;
+  }
+}
 @media screen and (min-width: 1360px) {
   .carousel-item .text-light2 {
     padding-right: 15%;
@@ -319,6 +438,21 @@
     padding-right: 1pc;
   }
 }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  .carousel-item .text-light2 {
+    width: 100%;
+    color: black;
+    text-align: justify;
+    padding-right: 0.3pc;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  .carousel-item .text-light2 {
+    width: 100%;
+    color: black;
+    text-align: justify;
+  }
+}
 .carousel-item .d-flex {
   float: left;
   margin-left: 10%;
@@ -338,6 +472,15 @@
     display: block;
     position: relative;
     width: 30%;
+    height: auto;
+    left: -5%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  .carousel-item .d-flex {
+    display: block;
+    position: relative;
+    width: 60%;
     height: auto;
     left: -5%;
   }
@@ -382,6 +525,26 @@
     margin-top: 3.5pc;
   }
 }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  .carousel-item .d-flex img {
+    display: block;
+    position: relative;
+    width: 50%;
+    height: auto;
+    left: 25%;
+    margin-top: 3.5pc;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  .carousel-item .d-flex img {
+    display: block;
+    position: relative;
+    width: 35%;
+    height: auto;
+    left: 15%;
+    margin-top: 3.5pc;
+  }
+}
 
 .text-light2, .enlacesVenta .compraAmazon a, .enlacesVenta .compraBD a, #Contacto form label,
 .enlacesVenta .compraML a, .enlacesVenta .compraOtros a, body, .gridBio p, .Titulo {
@@ -409,6 +572,14 @@ body .navbar {
   }
 }
 @media screen and (min-width: 541px) and (max-width: 768px) {
+  body .navbar {
+    height: 2.5pc;
+  }
+  body .navbar .container-fluid {
+    height: 5pc;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
   body .navbar {
     height: 2.5pc;
   }
@@ -505,6 +676,32 @@ body .sPortada h2 {
     margin: 3pc 1pc 7pc 17pc;
   }
 }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  body .sPortada {
+    height: 9pc;
+  }
+  body .sPortada h1 {
+    font-size: 1.5pc;
+    margin: 0pc 4pc 0pc 1pc;
+  }
+  body .sPortada h2 {
+    font-size: 3pc;
+    margin: 4pc 1pc 7pc 14pc;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  body .sPortada {
+    height: 9pc;
+  }
+  body .sPortada h1 {
+    font-size: 1.5pc;
+    margin: 0pc 4pc 0pc 1pc;
+  }
+  body .sPortada h2 {
+    font-size: 3pc;
+    margin: 4pc 1pc 7pc 12pc;
+  }
+}
 body .Titulo {
   font-family: "Encode Sans SC", sans-serif;
   font-family: "Uchen", serif;
@@ -556,6 +753,18 @@ body .gridBio img {
     width: 20%;
   }
 }
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  body .gridBio img {
+    height: auto;
+    width: 30%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  body .gridBio img {
+    height: auto;
+    width: 30%;
+  }
+}
 @media screen and (min-width: 540px) and (max-width: 767px) {
   body .gridBio {
     display: flex;
@@ -566,6 +775,24 @@ body .gridBio img {
   }
 }
 @media screen and (min-width: 411px) and (max-width: 414px) {
+  body .gridBio {
+    display: flex;
+  }
+  body .gridBio p {
+    text-align: start;
+    font-size: 0.75pc;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  body .gridBio {
+    display: flex;
+  }
+  body .gridBio p {
+    text-align: start;
+    font-size: 0.75pc;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
   body .gridBio {
     display: flex;
   }

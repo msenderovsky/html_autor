@@ -65,4 +65,19 @@
             }
 
         }
+
+        @media screen and (min-width: 320px) and (max-width: 359px){   
+            height: 8pc;
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: $align;
+
+            .Enlace{
+                height: 2pc;
+                justify-content: $align;
+                align-content: $align;
+            }
+        }
 }

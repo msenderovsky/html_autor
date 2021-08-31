@@ -608,12 +608,14 @@ body .sPortada h1 {
   font-family: "Abril Fatface", cursive;
   color: lightgray;
   font-size: 5pc;
+  margin-left: 2pc;
 }
 body .sPortada h2 {
   font-family: "Abril Fatface", cursive;
   font-family: "MonteCarlo", cursive;
   color: lightgray;
   font-size: 5pc;
+  margin-right: 2pc;
 }
 body .Titulo {
   font-family: "Encode Sans SC", sans-serif;

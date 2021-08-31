@@ -47,128 +47,30 @@ body{
     }
 
     .sPortada{
+
         background-image: url("../images/background3.jpg");
         background-size: cover;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-            "autor"
-            "escritor";
-
+        width: 100%;
         height: 18pc;
+        .left{
+            width: 49%;
+            display: inline-block;
+        }
+        .right{
+            text-align: right;
+        }
 
         h1{
-            grid-area: autor;
             font-family: 'Abril Fatface', cursive;
             color: lightgray;
-            float: left;
-            font-size: 4pc;
-            margin: 1pc;
+            font-size: 5pc;
         }
 
         h2{
-            grid-area: escritor;
             font-family: 'Abril Fatface', cursive;
             font-family: 'MonteCarlo', cursive;
             color: lightgray;
-            float: right;
-            font-size: 8pc;
-            margin: 0pc 0pc 5pc 63pc;
-        }
-
-        @media screen and (min-width: 1025px) and (max-width: 1360px){
-            h1{
-                margin: 1pc;
-            }
-
-            h2{
-                margin: 7pc 2pc 0pc 0pc;
-            }
-        }
-
-        @media screen and (min-width: 769px) and (max-width: 1024px){
-            height: 10pc;
-            background-size: cover;
-
-            h1{
-                margin: 1pc;
-                font-size: 2pc;
-            }
-
-            h2{
-                margin: 1pc 2pc 0pc 55pc;
-                font-size: 3pc;
-            }
-        }
-
-        @media screen and (min-width: 541px) and (max-width: 768px){
-            height: 8pc;            
-
-            h1{
-                font-size: 1.5pc;
-                padding-left: 1pc;
-            }
-
-            h2{
-                font-size: 2pc;
-                margin: 1pc 1pc 2pc 42pc;
-            }
-        }
-
-        @media screen and (min-width: 415px) and (max-width: 540px){    
-            height: 9pc;
-            
-            h1{
-                font-size: 2pc;
-                margin: 0pc 4pc 0pc 1pc;
-            }
-
-            h2{
-                font-size: 3pc;
-                margin: 3pc 1pc 7pc 25pc;
-            }
-        }
-
-        @media screen and (min-width: 411px) and (max-width: 414px){    
-            height: 9pc;
-            
-            h1{
-                font-size: 2pc;
-                margin: 0pc 4pc 0pc 1pc;
-            }
-
-            h2{
-                font-size: 3pc;
-                margin: 3pc 1pc 7pc 17pc;
-            }
-        }
-
-        @media screen and (min-width: 360px) and (max-width: 375px){    
-            height: 9pc;
-            
-            h1{
-                font-size: 1.5pc;
-                margin: 0pc 4pc 0pc 1pc;
-            }
-
-            h2{
-                font-size: 3pc;
-                margin: 4pc 1pc 7pc 14pc;
-            }
-        }
-
-        @media screen and (min-width: 320px) and (max-width: 359px){    
-            height: 9pc;
-            
-            h1{
-                font-size: 1.5pc;
-                margin: 0pc 4pc 0pc 1pc;
-            }
-
-            h2{
-                font-size: 3pc;
-                margin: 4pc 1pc 7pc 12pc;
-            }
+            font-size: 5pc;
         }
     }
 
@@ -281,6 +183,7 @@ body{
 
         background-color: #666A86;
         text-align: $align;
+        
     }
 
     footer{

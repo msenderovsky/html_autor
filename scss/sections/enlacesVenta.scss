@@ -12,12 +12,12 @@
             height: 2pc;
             justify-content: $align;
             align-content: $align;
-            transition: all 1s ease-in-out;
+            transition: all 0.5s ease-in-out;
 
             &:hover{
                 background-color: lightgray;
                 text-decoration: none;
-                transform: scale(3);
+                transform: scale(1.5);
             }
 
             a{

@@ -203,12 +203,12 @@
   height: 2pc;
   justify-content: center;
   align-content: center;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .enlacesVenta .Enlace:hover {
   background-color: lightgray;
   text-decoration: none;
-  transform: scale(3);
+  transform: scale(1.5);
 }
 .enlacesVenta .Enlace a {
   font-family: "MedievalSharp", cursive;
@@ -268,11 +268,11 @@
 }
 
 .formularioCompra {
+  background-color: #7d7df3;
   display: grid;
-  grid-template-areas: "formulario" "subTituloCompra" "mapa";
+  grid-template-areas: "h3" "formulario" "subTituloCompra" "mapa";
   grid-template-rows: 5pc 5pc 5pc;
-  grid-template-columns: 100pc;
-  margin: 1pc 3pc;
+  grid-template-columns: auto;
   align-content: space-around;
   justify-content: space-around;
   justify-items: center;
@@ -280,17 +280,22 @@
   text-align: center;
 }
 .formularioCompra h3 {
+  color: black;
   text-align: center;
   padding-bottom: 0.25pc;
   border-bottom: 0.2pc solid #fbff22;
 }
 .formularioCompra #formulario {
+  color: black;
+  margin-top: 1pc;
   grid-area: formulario;
 }
 .formularioCompra #subTituloCompra {
+  margin-top: 1pc;
   grid-area: subTituloCompra;
 }
 .formularioCompra #mapa {
+  margin-top: 1pc;
   grid-area: mapa;
 }
 

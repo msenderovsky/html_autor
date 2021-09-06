@@ -1,12 +1,13 @@
 .formularioCompra{
+    background-color: rgb(125, 125, 243);
     display: grid;
     grid-template-areas: 
+    "h3"
     "formulario"
     "subTituloCompra"
     "mapa";
     grid-template-rows: 5pc 5pc 5pc;
-    grid-template-columns: 100pc;
-    margin: 1pc 3pc;
+    grid-template-columns: auto;
     align-content: space-around;
     justify-content: space-around;
     justify-items: $align;
@@ -14,20 +15,25 @@
     text-align: $align;
 
     h3{
+        color: black;
         text-align: $align;
         padding-bottom: 0.25pc;
         border-bottom: 0.2pc solid rgb(251, 255, 34);
     }
 
     #formulario{
+        color: black;
+        margin-top: 1pc;
         grid-area: formulario;
     }
 
     #subTituloCompra{
+        margin-top: 1pc;
         grid-area: subTituloCompra;
     }
 
     #mapa{
+        margin-top: 1pc;
         grid-area: mapa;
     }
 }
